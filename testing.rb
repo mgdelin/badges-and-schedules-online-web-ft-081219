@@ -1,29 +1,21 @@
+require "pry"
 def badge_maker(name)
   return "Hello, my name is #{name}."
 end
 
-def batch_badge_creator (people)
+def batch_badge_creator (attendees)
   new_badges =[]
-  people.each do |name|
+  attendees.each do |name|
     new_badges << "Hello, my name is #{name}."
   end
   return new_badges
 end
 
-def assign_rooms (people)
+def assign_rooms (attendees)
   counter = 1
   this_is_your_room = []
-  people.each do |name|
+  attendees.each do |name|
     this_is_your_room << "Hello, #{name}! You'll be assigned to room #{counter}!"
     counter += 1
   end
-  return this_is_your_room
-end
   
-def printer (attendees)
-  badges = batch_badge_creator(attendees)
-  rooms = assign_rooms(attendees)
- puts badges
- puts rooms
- 
-end
