@@ -25,7 +25,7 @@ def printer (attendees)
   
  puts badges
  
- end
+ 
  end
  
 end
